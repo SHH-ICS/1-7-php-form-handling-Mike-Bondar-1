@@ -10,13 +10,17 @@
   <body>
     
     <?php
-    $userName = "";
-    if ( isset( $_POST['userName'] ) ){
-      $userName = $_POST['userName'];
+    $x = "";
+    if ( isset( $_POST['x'] ) ){
+      $x = $_POST['x'];
     }
-    echo "<h1>Welcome ".$userName."!</h1>\n";
+    echo "<h1>Gimme your information... plwesae ".$x."!</h1>\n";
     ?>
-    
+    <form action="welcome.php" method="post">
+Name: <input type="text" name="name"><br>
+E-mail: <input type="text" name="email"><br>
+<input type="submit">
+</form>
   </body>
   
 </html>
